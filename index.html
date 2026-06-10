@@ -53,7 +53,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-#get-quote { scroll-margin-top: 90px; }
+#get-quote { scroll-margin-top: 75px; }
 body {
   font-family: var(--font-body);
   color: var(--ink);
@@ -1335,14 +1335,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="gallery-grid reveal">
-      <figure class="g1"><img src="g1.jpg" alt="Custom luxury pool built in St. Johns County FL" loading="lazy"></figure>
-      <figure class="g2"><img src="g2.jpg" alt="Custom inground pool, St. Augustine FL" loading="lazy"></figure>
-      <figure class="g3"><img src="g3.jpg" alt="Screen-enclosed pool, St. Johns County FL" loading="lazy"></figure>
-      <figure class="g4"><img src="g4.jpg" alt="Custom pool with spa, St. Augustine FL" loading="lazy"></figure>
-      <figure class="g7"><img src="g7.jpg" alt="Custom screen-enclosed pool with spa, St. Johns County FL" loading="lazy"></figure>
-      <figure class="g5"><img src="g5.jpg" alt="Custom backyard pool with tanning ledge, St. Augustine FL" loading="lazy"></figure>
-      <figure class="g6"><img src="g6.jpg" alt="Luxury pool construction, St. Johns County FL" loading="lazy"></figure>
-      <figure class="g8"><img src="g8.jpg" alt="Custom luxury pool and paver patio, St. Johns County FL" loading="lazy"></figure>
+      <figure class="g1"><img src="images/g1.jpg" alt="Custom luxury pool built in St. Johns County FL" loading="lazy"></figure>
+      <figure class="g2"><img src="images/g2.jpg" alt="Custom inground pool, St. Augustine FL" loading="lazy"></figure>
+      <figure class="g3"><img src="images/g3.jpg" alt="Screen-enclosed pool, St. Johns County FL" loading="lazy"></figure>
+      <figure class="g4"><img src="images/g4.jpg" alt="Custom pool with spa, St. Augustine FL" loading="lazy"></figure>
+      <figure class="g7"><img src="images/g7.jpg" alt="Custom screen-enclosed pool with spa, St. Johns County FL" loading="lazy"></figure>
+      <figure class="g5"><img src="images/g5.jpg" alt="Custom backyard pool with tanning ledge, St. Augustine FL" loading="lazy"></figure>
+      <figure class="g6"><img src="images/g6.jpg" alt="Luxury pool construction, St. Johns County FL" loading="lazy"></figure>
+      <figure class="g8"><img src="images/g8.jpg" alt="Custom luxury pool and paver patio, St. Johns County FL" loading="lazy"></figure>
     </div>
   </div>
 </section>
@@ -1772,7 +1772,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
-      <div class="form-card reveal">
+      <div class="form-card reveal" id="quote-form">
         <div class="form-card-head">
           <h3>Request Your Free Consultation & Quote</h3>
           <p>We'll text or email within 1 business hour.</p>
@@ -1870,6 +1870,27 @@ document.querySelectorAll('.faq-item').forEach(item => {
     }
   });
 });
+
+// On mobile/tablet (where the form stacks below the text), send #get-quote CTA
+// links straight to the form, bypassing the left-column text. Breakpoint matches
+// the .final-inner single-column collapse at max-width 1024px.
+(function() {
+  const mq = window.matchMedia('(max-width: 1024px)');
+  const navShell = document.querySelector('.nav-shell');
+  function goToForm(e) {
+    if (!mq.matches) return;                   // wide screens: columns are side-by-side, keep default jump to the section top
+    const form = document.getElementById('quote-form');
+    if (!form) return;
+    e.preventDefault();
+    const navH = navShell ? navShell.offsetHeight : 0;
+    const y = Math.max(0, form.getBoundingClientRect().top + window.pageYOffset - navH - 12);
+    try { window.scrollTo({ top: y, behavior: 'smooth' }); }
+    catch (_) { window.scrollTo(0, y); }       // fallback for browsers that ignore the options object
+  }
+  document.querySelectorAll('a[href="#get-quote"]').forEach(link => {
+    link.addEventListener('click', goToForm);
+  });
+})();
 </script>
 
 <!-- GoHighLevel Chat Widget -->
