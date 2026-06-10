@@ -11,7 +11,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Florida Coastal Contractors | Custom Pool Builder in St. Augustine, FL</title>
-<meta name="description" content="Custom-built luxury swimming pools in St. Augustine and St. Johns County. Family-owned, BBB-accredited, 30+ years. Fixed-price contracts, no surprises. Free design consultation.">
+<meta name="description" content="Custom-built luxury swimming pools in St. Augustine and St. Johns County. Family-owned, BBB-accredited, 15+ years. Fixed-price contracts, no surprises. Free design consultation.">
 <link rel="icon" href="https://www.dreambackyardbuilders.com/wp-content/uploads/2025/07/cropped-Florida-Coastal-Contractors-St-Augustine-FL-450-Logo-32x32.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -419,6 +419,64 @@ section.tight { padding: 64px 0; }
 .compare-cta-wrap { text-align: center; margin-top: 28px; }
 .compare-cta:hover { color: var(--navy); }
 
+/* Full-width Difference card */
+.diff-card {
+  margin-top: 22px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 44px 48px;
+  box-shadow: var(--shadow-card);
+}
+.diff-divider {
+  height: 1px;
+  background: var(--line);
+  margin: 36px 0;
+}
+.diff-title {
+  display: flex; align-items: center; gap: 12px;
+  color: var(--navy);
+  margin-bottom: 28px;
+}
+.diff-title .ph { color: var(--gold); font-size: 27px; }
+.diff-values, .diff-apart {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px 36px;
+}
+.diff-value { display: flex; gap: 16px; align-items: flex-start; }
+.diff-ico {
+  flex-shrink: 0;
+  width: 48px; height: 48px;
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  background: var(--brand-sky-soft);
+}
+.diff-ico .ph { font-size: 25px; color: var(--brand-blue-deep); }
+.diff-ico.gold { background: var(--gold-soft); }
+.diff-ico.gold .ph { color: var(--gold-deep); }
+.diff-value h4, .diff-apart-item h4 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--navy);
+  margin-bottom: 5px;
+  letter-spacing: -0.01em;
+}
+.diff-value p, .diff-apart-item p {
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.55;
+}
+.diff-apart-item {
+  display: flex; gap: 16px; align-items: flex-start;
+  background: var(--cream);
+  border: 1px solid var(--line-soft);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius-sm);
+  padding: 20px 22px;
+}
+.diff-apart-item.accent-blue { border-left-color: var(--brand-blue-deep); }
+
 /* PROCESS ===================== */
 .process { background: var(--paper); }
 .process-head { text-align: center; max-width: 940px; margin: 0 auto 64px; }
@@ -701,7 +759,8 @@ section.tight { padding: 64px 0; }
 .faq { background: var(--cream); }
 .faq-head { text-align: center; max-width: 640px; margin: 0 auto 48px; }
 .faq-head h2 { margin-top: 14px; margin-bottom: 12px; }
-.faq-grid { max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+.faq-grid { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 28px; align-items: start; }
+.faq-col { display: flex; flex-direction: column; gap: 14px; }
 .faq-cta-wrap { text-align: center; margin-top: 40px; }
 .btn-outline-navy.gold-hover:hover { background: var(--navy); color: var(--gold); }
 .btn-outline-navy.gold-hover:hover .ph { color: var(--gold); }
@@ -742,6 +801,15 @@ section.tight { padding: 64px 0; }
 .faq-item[open] summary .toggle .ph { color: #fff; transform: rotate(45deg); }
 .faq-item .body { padding: 0 26px 24px; }
 .faq-item .body p { color: var(--ink-soft); line-height: 1.6; }
+.faq-item .body .faq-tag {
+  display: flex; align-items: center; gap: 8px;
+  margin-top: 14px;
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: 15px;
+  color: var(--gold-deep);
+}
+.faq-item .body .faq-tag .ph { color: var(--gold); font-style: normal; flex-shrink: 0; }
 
 /* FINAL CTA ===================== */
 .final {
@@ -939,6 +1007,10 @@ footer {
   .process-grid { grid-template-columns: 1fr; }
   .coastal-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: 1fr; }
+  .faq-grid { grid-template-columns: 1fr; gap: 14px; }
+  .diff-card { padding: 28px 22px; }
+  .diff-values, .diff-apart { grid-template-columns: 1fr; gap: 18px; }
+  .diff-divider { margin: 28px 0; }
   .gallery-head h2 { white-space: normal; }
   .g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8 { grid-column: span 1; height: 220px; }
   .g1 { height: 260px; }
@@ -1060,7 +1132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="proof-label">Verified Reviews</div>
       </div>
       <div class="proof-item">
-        <div class="proof-num">30+</div>
+        <div class="proof-num">15+</div>
         <div class="proof-label">Years Building</div>
       </div>
       <div class="proof-item">
@@ -1134,6 +1206,78 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
+
+    <div class="diff-card reveal">
+      <div class="diff-block">
+        <h3 class="diff-title"><i class="ph-fill ph-star"></i> Our Core Values</h3>
+        <div class="diff-values">
+          <div class="diff-value">
+            <span class="diff-ico"><i class="ph-fill ph-diamond"></i></span>
+            <div>
+              <h4>Quality Craftsmanship</h4>
+              <p>Superior materials and expert execution on every build.</p>
+            </div>
+          </div>
+          <div class="diff-value">
+            <span class="diff-ico"><i class="ph-fill ph-heart"></i></span>
+            <div>
+              <h4>Customer Satisfaction</h4>
+              <p>Your happiness is our ultimate priority, start to finish.</p>
+            </div>
+          </div>
+          <div class="diff-value">
+            <span class="diff-ico"><i class="ph-fill ph-handshake"></i></span>
+            <div>
+              <h4>Unwavering Integrity</h4>
+              <p>Honest pricing and transparent timelines, always.</p>
+            </div>
+          </div>
+          <div class="diff-value">
+            <span class="diff-ico"><i class="ph-fill ph-magnifying-glass"></i></span>
+            <div>
+              <h4>Attention to Detail</h4>
+              <p>Perfection in every tile, cut, and finish.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="diff-divider"></div>
+
+      <div class="diff-block">
+        <h3 class="diff-title"><i class="ph-fill ph-seal-check"></i> What Sets Us Apart</h3>
+        <div class="diff-apart">
+          <div class="diff-apart-item">
+            <span class="diff-ico gold"><i class="ph-fill ph-trophy"></i></span>
+            <div>
+              <h4>BuildZoom Score 110</h4>
+              <p>Proudly ranked in the top 4% (above 96%) of all contractors in Florida.</p>
+            </div>
+          </div>
+          <div class="diff-apart-item accent-blue">
+            <span class="diff-ico"><i class="ph-fill ph-calendar-check"></i></span>
+            <div>
+              <h4>15+ Years of Experience</h4>
+              <p>Over a decade and a half of trusted service building Northeast Florida's outdoor retreats.</p>
+            </div>
+          </div>
+          <div class="diff-apart-item">
+            <span class="diff-ico gold"><i class="ph-fill ph-medal"></i></span>
+            <div>
+              <h4>Elite Preferred Builder Status</h4>
+              <p>Recognized partnership with Lyon Financial, securing premium financing options.</p>
+            </div>
+          </div>
+          <div class="diff-apart-item accent-blue">
+            <span class="diff-ico"><i class="ph-fill ph-shield-check"></i></span>
+            <div>
+              <h4>Fully Licensed &amp; Insured Professionals</h4>
+              <p>State-certified building and pool experts with $2M+ in comprehensive coverage.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1191,14 +1335,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="gallery-grid reveal">
-      <figure class="g1"><img src="https://www.dreambackyardbuilders.com/wp-content/uploads/2024/04/best-swimming-pool-builders-St-Augustine-FL.jpeg" alt="Custom luxury pool with paver patio, St. Augustine FL" loading="lazy"></figure>
-      <figure class="g2"><img src="https://www.dreambackyardbuilders.com/wp-content/uploads/2024/12/inground-pool-installation-contractors-near-me.jpeg" alt="Inground pool installation" loading="lazy"></figure>
-      <figure class="g3"><img src="https://www.dreambackyardbuilders.com/wp-content/uploads/2024/12/inground-pool-installation-near-St-Augustine-FL.jpeg" alt="Inground pool near St. Augustine FL" loading="lazy"></figure>
-      <figure class="g4"><img src="https://www.dreambackyardbuilders.com/wp-content/uploads/2024/04/pool-builders-St-Augustine-FL.jpeg" alt="Custom pool with spa" loading="lazy"></figure>
-      <figure class="g7 g-ph"><span><i class="ph ph-image"></i>Photo Coming Soon</span></figure>
-      <figure class="g5"><img src="https://www.dreambackyardbuilders.com/wp-content/uploads/2024/04/swimming-pool-builders-St-Augustine.jpg" alt="Custom backyard pool with tanning ledge" loading="lazy"></figure>
-      <figure class="g6"><img src="https://www.dreambackyardbuilders.com/wp-content/uploads/2024/12/pool-construction-companies-dt-augustine-fl-fcc.jpeg" alt="Pool construction St. Augustine FL" loading="lazy"></figure>
-      <figure class="g8 g-ph"><span><i class="ph ph-image"></i>Photo Coming Soon</span></figure>
+      <figure class="g1"><img src="images/g1.jpg" alt="Custom luxury pool built in St. Johns County FL" loading="lazy"></figure>
+      <figure class="g2"><img src="images/g2.jpg" alt="Custom inground pool, St. Augustine FL" loading="lazy"></figure>
+      <figure class="g3"><img src="images/g3.jpg" alt="Screen-enclosed pool, St. Johns County FL" loading="lazy"></figure>
+      <figure class="g4"><img src="images/g4.jpg" alt="Custom pool with spa, St. Augustine FL" loading="lazy"></figure>
+      <figure class="g7"><img src="images/g7.jpg" alt="Custom screen-enclosed pool with spa, St. Johns County FL" loading="lazy"></figure>
+      <figure class="g5"><img src="images/g5.jpg" alt="Custom backyard pool with tanning ledge, St. Augustine FL" loading="lazy"></figure>
+      <figure class="g6"><img src="images/g6.jpg" alt="Luxury pool construction, St. Johns County FL" loading="lazy"></figure>
+      <figure class="g8"><img src="images/g8.jpg" alt="Custom luxury pool and paver patio, St. Johns County FL" loading="lazy"></figure>
     </div>
   </div>
 </section>
@@ -1209,7 +1353,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="coastal-head reveal">
       <span class="eyebrow on-dark">Built for St. Augustine, FL</span>
       <h2>Florida is hard on pools. We build for the climate, not against it.</h2>
-      <p class="lead">Salt air corrodes equipment. Hurricane winds test structures. Coquina soil drains differently. Generic pool builders learn this on your dime. We learned it 30 years ago.</p>
+      <p class="lead">Salt air corrodes equipment. Hurricane winds test structures. Coquina soil drains differently. Generic pool builders learn this on your dime. We learned it 15+ years ago.</p>
     </div>
 
     <div class="coastal-grid">
@@ -1390,7 +1534,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li><i class="ph-fill ph-check-circle"></i> Detailed written pricing before any commitment</li>
         <li><i class="ph-fill ph-check-circle"></i> State licensed pool contractor, fully bonded and insured</li>
         <li><i class="ph-fill ph-check-circle"></i> <strong>BBB Accredited, 4.9 stars across 100+ verified reviews</strong></li>
-        <li><i class="ph-fill ph-check-circle"></i> Local, family-owned, in St. Augustine for over 30 years</li>
+        <li><i class="ph-fill ph-check-circle"></i> Local, family-owned, in St. Augustine for over 15+ years</li>
       </ul>
     </div>
   </div>
@@ -1405,6 +1549,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="faq-grid">
+      <div class="faq-col">
       <details class="faq-item reveal">
         <summary>
           How much does a custom pool cost in St. Johns County?
@@ -1451,7 +1596,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="toggle"><i class="ph ph-plus"></i></span>
         </summary>
         <div class="body">
-          <p>Most of our custom builds run 10 to 16 weeks from groundbreak to final walk-through, depending on size, complexity, and the season. Permitting adds 3 to 6 weeks on the front end. You get a realistic written timeline upfront and weekly progress updates. We don't disappear after you sign.</p>
+          <p>Most projects take 4-8 weeks depending on complexity. Pool installations average 4-6 weeks, while complete outdoor living spaces with kitchens and structures can take 6-8 weeks. We provide a detailed timeline during your consultation. Weather permitting - we work year-round in Florida's climate.</p>
         </div>
       </details>
 
@@ -1461,7 +1606,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="toggle"><i class="ph ph-plus"></i></span>
         </summary>
         <div class="body">
-          <p>It's a fair question, and honestly it's the fear behind most of the others. Here's the straight answer: we've been building pools in St. Johns County for more than 30 years, and we're still here because we finish what we start. Florida Coastal Contractors is a State Certified, licensed, bonded, and insured company (CPC-056960 and CBC-1263763), so you're protected by more than a handshake. We're local and family-owned with our name on the line in this community, not a crew chasing the next deposit. You also pay as the work gets completed, phase by phase, never a large sum upfront for work we haven't done yet. Want proof? Ask us for homeowners we built for years ago. The fact that they still recommend us is the real answer.</p>
+          <p>It's a fair question, and honestly it's the fear behind most of the others. Here's the straight answer: we've been building pools in St. Johns County for more than 15 years, and we're still here because we finish what we start. Florida Coastal Contractors is a State Certified, licensed, bonded, and insured company (CPC-056960 and CBC-1263763), so you're protected by more than a handshake. We're local and family-owned with our name on the line in this community, not a crew chasing the next deposit. You also pay as the work gets completed, phase by phase, never a large sum upfront for work we haven't done yet. Want proof? Ask us for homeowners we built for years ago. The fact that they still recommend us is the real answer.</p>
         </div>
       </details>
 
@@ -1471,7 +1616,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="toggle"><i class="ph ph-plus"></i></span>
         </summary>
         <div class="body">
-          <p>This is exactly where bad builders cut corners, because they're betting you'll never see it. We build the opposite way. Every pool we build is inspected by St. Johns County at each critical phase: the steel and rebar before the shell is poured, the plumbing while it's pressure tested, the electrical and bonding, and the final. Those inspections happen whether you watch or not, and you're welcome to be there for every one. We also walk you through the equipment and materials before they go in the ground, not after. As a State Certified Pool Contractor (CPC-056960), the parts you'll never see are held to the same standard as the tile you will. Built once, built right, because we're the ones who answer for it 30 years from now.</p>
+          <p>This is exactly where bad builders cut corners, because they're betting you'll never see it. We build the opposite way. Every pool we build is inspected by St. Johns County at each critical phase: the steel and rebar before the shell is poured, the plumbing while it's pressure tested, the electrical and bonding, and the final. Those inspections happen whether you watch or not, and you're welcome to be there for every one. We also walk you through the equipment and materials before they go in the ground, not after. As a State Certified Pool Contractor (CPC-056960), the parts you'll never see are held to the same standard as the tile you will. Built once, built right, because we're the ones who answer for it 15 years from now.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>
+          Can I see a pool you built before I commit?
+          <span class="toggle"><i class="ph ph-plus"></i></span>
+        </summary>
+        <div class="body">
+          <p>Yes. We'll arrange visits to recently-completed pools right here in St. Johns County. Walk the deck, see the plaster up close, talk to the homeowner. Our reputation in this town is everything to us, so we make sure you can verify it firsthand.</p>
+        </div>
+      </details>
+      </div>
+
+      <div class="faq-col">
+      <details class="faq-item reveal">
+        <summary>
+          What kind of pool do you build, concrete, fiberglass, or vinyl?
+          <span class="toggle"><i class="ph ph-plus"></i></span>
+        </summary>
+        <div class="body">
+          <p>We build custom concrete (gunite) pools, the strongest and most flexible option for fully custom shapes, depths, tanning ledges, and spas. Unlike a pre-molded fiberglass shell or a vinyl liner, gunite lets us match your exact design instead of forcing your yard to fit a stock mold, and it's engineered to hold up to Florida's coquina soil and salt air. During your consultation we'll walk you through the trade-offs honestly, so you choose what's right for your yard and budget, not what's easiest for us to pour.</p>
+          <p class="faq-tag"><i class="ph-fill ph-check-circle"></i> Fully custom shapes, built for Florida's climate</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>
+          What are your payment and financing options?
+          <span class="toggle"><i class="ph ph-plus"></i></span>
+        </summary>
+        <div class="body">
+          <p>We accept cash, checks, and credit cards. For larger projects, we partner with Lyon Financial for home improvement loans up to $200,000, with terms up to 30 years. We'll walk you through the option that fits your budget during your consultation.</p>
+          <p class="faq-tag"><i class="ph-fill ph-check-circle"></i> No prepayment penalties and a quick approval process</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>
+          Can I see different swimming pool designs that fit my property before any construction starts?
+          <span class="toggle"><i class="ph ph-plus"></i></span>
+        </summary>
+        <div class="body">
+          <p>Absolutely. Our Design Center creates 3D renderings and virtual tours of your project, so you'll see exactly how your outdoor space will look before we ever break ground. You approve the design first, then we build it.</p>
+          <p class="faq-tag"><i class="ph-fill ph-check-circle"></i> Full 3D visualization included in every project</p>
         </div>
       </details>
 
@@ -1481,7 +1671,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="toggle"><i class="ph ph-plus"></i></span>
         </summary>
         <div class="body">
-          <p>Communication is where most pool builds fall apart, so we built ours around it. From day one you get your project manager's direct cell phone, not a main office line or a ticket system. You call or text the person actually running your build, and we pick up. You also get regular progress updates, so you always know what phase you're in and what's coming next instead of wondering if you've been forgotten. It's the same team from design to the final walk-through, so the person who answers in week ten is the same one who answered in week one. If we ever go quiet on you, that's on us, and it's not how we've earned 30 years of referrals in this town.</p>
+          <p>Communication is where most pool builds fall apart, so we built ours around it. From day one you get your project manager's direct cell phone, not a main office line or a ticket system. You call or text the person actually running your build, and we pick up. You also get regular progress updates, so you always know what phase you're in and what's coming next instead of wondering if you've been forgotten. It's the same team from design to the final walk-through, so the person who answers in week ten is the same one who answered in week one. If we ever go quiet on you, that's on us, and it's not how we've earned 15 years of referrals in this town.</p>
         </div>
       </details>
 
@@ -1497,13 +1687,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <details class="faq-item reveal">
         <summary>
-          Can I see a pool you built before I commit?
+          What areas do you serve?
           <span class="toggle"><i class="ph ph-plus"></i></span>
         </summary>
         <div class="body">
-          <p>Yes. We'll arrange visits to recently-completed pools right here in St. Johns County. Walk the deck, see the plaster up close, talk to the homeowner. Our reputation in this town is everything to us, so we make sure you can verify it firsthand.</p>
+          <p>We serve St. Johns, Duval, and Clay counties, including St. Augustine, Jacksonville, Orange Park, and surrounding communities within 50 miles.</p>
+          <p class="faq-tag"><i class="ph-fill ph-check-circle"></i> Free consultations available in all service areas</p>
         </div>
       </details>
+
+      <details class="faq-item reveal">
+        <summary>
+          What makes you different from other contractors?
+          <span class="toggle"><i class="ph ph-plus"></i></span>
+        </summary>
+        <div class="body">
+          <p>A BuildZoom Score of 110 (top 4% in Florida), 15+ years of experience, 500+ projects completed, single-source turnkey construction, and a 96% customer satisfaction rate. We're the team that designs your project and builds it, start to finish.</p>
+          <p class="faq-tag"><i class="ph-fill ph-check-circle"></i> Rated above 96% of Florida contractors</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>
+          How do I get started?
+          <span class="toggle"><i class="ph ph-plus"></i></span>
+        </summary>
+        <div class="body">
+          <p>Call <a href="tel:9048273962">(904) 827-3962</a> to schedule a free consultation. We'll visit your property, talk through your vision, and provide a detailed quote. No pressure, no obligation.</p>
+          <p class="faq-tag"><i class="ph-fill ph-check-circle"></i> Free design consultation included</p>
+        </div>
+      </details>
+      </div>
     </div>
     <div class="faq-cta-wrap">
       <a href="tel:9048273962" class="btn btn-outline-navy btn-lg gold-hover">
@@ -1539,7 +1753,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li><i class="ph-fill ph-check-circle"></i> Clear contract language with no shady fine print</li>
           <li><i class="ph-fill ph-check-circle"></i> Your driveway and yard look the same on day 90 as day one</li>
           <li><i class="ph-fill ph-check-circle"></i> Built right underground where you can't see it, not just on the surface</li>
-          <li><i class="ph-fill ph-check-circle"></i> 30+ years building right here in St. Johns County</li>
+          <li><i class="ph-fill ph-check-circle"></i> 15+ years building right here in St. Johns County</li>
           <li><i class="ph-fill ph-check-circle"></i> State Certified Pool Contractor, licensed, bonded, and insured</li>
           <li><i class="ph-fill ph-check-circle"></i> 106+ verified reviews from your own neighbors</li>
           <li><i class="ph-fill ph-check-circle"></i> Engineered for coquina soil, salt air, and hurricane-zone codes</li>
