@@ -1879,11 +1879,14 @@ document.querySelectorAll('.faq-item').forEach(item => {
   const navShell = document.querySelector('.nav-shell');
   function goToForm(e) {
     if (!mq.matches) return;                   // wide screens: columns are side-by-side, keep default jump to the section top
-    const form = document.getElementById('quote-form');
-    if (!form) return;
+    // Land at the bottom border of the "Or call our office right now" card, so the form sits right below the fold.
+    const phoneBox = document.querySelector('.final-phone-box');
+    const target = phoneBox || document.getElementById('quote-form');
+    if (!target) return;
     e.preventDefault();
     const navH = navShell ? navShell.offsetHeight : 0;
-    const y = Math.max(0, form.getBoundingClientRect().top + window.pageYOffset - navH - 12);
+    const edge = phoneBox ? target.getBoundingClientRect().bottom : target.getBoundingClientRect().top;
+    const y = Math.max(0, edge + window.pageYOffset - navH);
     try { window.scrollTo({ top: y, behavior: 'smooth' }); }
     catch (_) { window.scrollTo(0, y); }       // fallback for browsers that ignore the options object
   }
